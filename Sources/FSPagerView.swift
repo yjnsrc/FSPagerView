@@ -216,6 +216,11 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
     
     @objc open fileprivate(set) dynamic var currentIndex: Int = 0
     
+    @objc
+    open var openCollectionView: FSPagerCollectionView {
+        return collectionView
+    }
+    
     // MARK: - Private properties
     
     internal weak var collectionViewLayout: FSPagerViewLayout!
